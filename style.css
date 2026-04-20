@@ -171,6 +171,123 @@ button {
   box-shadow: var(--shadow);
 }
 
+.books-hero {
+  padding-bottom: 40px;
+}
+
+.book-hero-panel {
+  padding: 36px;
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.8)),
+    linear-gradient(135deg, rgba(182, 138, 73, 0.18), rgba(27, 42, 29, 0.08));
+  border: 1px solid rgba(22, 33, 23, 0.08);
+  box-shadow: var(--shadow);
+}
+
+.book-hero-panel__eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--brand);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.book-hero-panel h2,
+.book-cover-card strong {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+.book-hero-panel p,
+.book-cover-card p {
+  margin: 18px 0 0;
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+.book-hero-panel__meta,
+.audience-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.book-hero-panel__meta {
+  margin-top: 26px;
+}
+
+.book-hero-panel__meta span,
+.audience-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: rgba(22, 33, 23, 0.06);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.book-showcase {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.88fr) minmax(0, 1.12fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.book-showcase__cover {
+  display: grid;
+}
+
+.book-cover-card {
+  min-height: 100%;
+  padding: 42px 36px;
+  border-radius: 32px;
+  background:
+    linear-gradient(160deg, rgba(18, 31, 20, 0.98), rgba(36, 54, 41, 0.92)),
+    var(--panel);
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.book-cover-card__kicker {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #dfbd84;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.book-cover-card p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.book-image-card {
+  min-height: 100%;
+  padding: 24px;
+  border-radius: 32px;
+  background:
+    linear-gradient(160deg, rgba(255, 255, 255, 0.96), rgba(240, 230, 212, 0.92)),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.book-image-card__cover {
+  width: 100%;
+  border-radius: 18px;
+}
+
+.books-list {
+  margin-bottom: 18px;
+}
+
 .imdb-card {
   padding: 22px;
   border-radius: 28px;
@@ -1074,6 +1191,7 @@ button {
   .case-grid,
   .blog-hero__grid,
   .blog-layout,
+  .book-showcase,
   .page-hero__grid,
   .two-column-copy {
     grid-template-columns: 1fr;
